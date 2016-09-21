@@ -1,0 +1,20 @@
+doctype html
+html(ng-app="MyApp")
+	head
+		title Internal Routing
+		meta(charset="utf-8")
+		link(rel="stylesheet",href="bower_components/bootstrap/dist/css/bootstrap.css")
+		link(rel="stylesheet",href="production/css/main.css")
+	body
+		.container 
+			div(ui-view) 
+		script(type="text/javascript" src="bower_components/angular/angular.js")
+		script(type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js")
+		script(type="text/javascript" src="development/js/mainapp.js")
+		script(type="text/javascript" src="development/js/routeconfiguration.js")
+		script(type="text/javascript" src="development/js/apicallservice.js")
+		script(type="text/javascript" src="development/js/mydataservice.js")
+		script(type="text/javascript" src="development/js/configservice.js")
+		script(type="text/javascript" src="development/js/maincontroller.js")
+		script(type="text/javascript" src="development/js/departmentcontroller.js")
+		script(type="text/javascript" src="development/js/informationcontroller.js")

@@ -1,0 +1,38 @@
+@import _variables.sass
+=flexBox()
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+
+=flex($flexBox: 5)
+  -webkit-box-flex: $flexBox      
+  -moz-box-flex: $flexBox        
+  -webkit-flex: $flexBox          
+  -ms-flex: $flexBox            
+  flex: $flexBox 
+
+=background($image)
+  background: url("#{$image}.png")
+
+@mixin large-text 
+  font: 
+    family: Arial;
+    size: 20px;
+    weight: bold;
+    
+  color: #ff0000;
+
+@mixin clearfix 
+  display: inline-block
+  &:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+  * html & 
+    height: 1px 
+

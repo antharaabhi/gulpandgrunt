@@ -1,0 +1,12 @@
+#header Departments List
+.row
+	#dropDownSection.col-xs-12.col-sm-2.col-md-2.col-lg-2
+		select(ng-model="selectedSite", ng-change="siteSelected(selectedSite)")
+			option(value="", disabled) --select site--
+			option(ng-repeat="site in sites", value="{{site}}") {{site}}
+	#departments.col-xs-12.col-sm-10.col-md-10.col-lg-10
+		div(ui-view="departments")
+.row
+	#renderingDataView
+		div(ui-view="information")
+	

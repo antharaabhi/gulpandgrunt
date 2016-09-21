@@ -1,0 +1,27 @@
+h1 Information
+span site selected:{{siteSelected}} 
+br
+span department selected: {{departmentSelected}}
+br
+span(ng-bind="departmentUsers | json")
+//- wont see me
+// will see me
+
+- myname = "ansar"
+p= myname
+p #{myname}
+- name = "yellow<i>dirty fellow</i>"
+p= name
+p!= name
+p !{name}
+- heros = [1,2,3,5]
+ul
+	for i in heros
+		li #{i}
+
+if heros[0] == 6
+	h3 hello
+else
+	h3 bye
+
+	h5 hello baby

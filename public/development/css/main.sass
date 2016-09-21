@@ -1,0 +1,88 @@
+@import _mixins.sass
+*
+	margin: 0px
+	padding: 0px
+
+html,body
+	width: 100%
+	height: 100%
+	font-family: $fontFamily
+	
+.container 
+	width: 100%
+	height: 100%
+	position: relative
+
+#header
+	width: 100%
+	padding: 20px 0px 20px 0px
+	position: relative
+	background: $headerBackground
+	text-align: center
+	color: white
+	font-size: $headerFontSize
+.row 
+    margin: 0px
+    border: 1px solid darken($base-color, 20%)
+    @extend .container
+#dropDownSection, #departments
+	margin-top: 20px
+	+flex()
+
+@for $i from 0 through $grid-columns
+	.#{$class-block}-#{$i}
+		width: 60px + (60 * $i)
+		@extend .row
+		+flex($flexBoxValue)
+
+@each $name in $list
+	.#{$name}-photo
+		+background($name)
+
+@while $grid-columns > 0
+	.#{$class-block}-#{$grid-columns}
+		height: 0px + (60 * $grid-columns)
+	$grid-columns: $grid-columns - 1
+
+.message 
+	@at-root 
+		.info  
+			color: blue 
+		.error  
+			color: red 
+
+.hello
+	display: none
+
+	p, .link
+		color: white
+		padding: 0px
+	p, .ansar
+		color: green
+		padding: 5px
+.hello
+	display: none
+
+	&-link
+		color: white
+		padding: 0px
+	&-ansar
+		color: green
+		padding: 5px
+	.helloans & 
+		color: red
+.rishi
+	+flexBox()
+
+@each $animal, $color, $cursor in (puma, black, default),(sea-slug, blue, pointer),(egret, white, move) 
+	.#{$animal}-icon 
+		background-image: url('/images/#{$animal}.png');
+		border: 2px solid $color;
+		cursor: $cursor;
+  
+
+.andhra
+	display: block
+	+large-text
+.box
+	+clearfix

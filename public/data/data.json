@@ -1,0 +1,58 @@
+{
+	"sites":[
+		{
+			"siteName":"aaaaaa",
+			"id": 1,
+			"departments":[
+				{
+					"id":"1",
+					"name":"aaaaaa department 1",
+					"users":[{
+						"name":"user 1 "
+						}]
+				},
+				{
+					"id":"2",
+					"name":"aaaaaa  department 2",
+					"users":[{
+						"name":"user 2"
+					}]
+				},
+				{
+					"id":"3",
+					"name":"aaaaaa  department 3",
+					"users":[{
+						"name":"user 3"
+					}]
+				}
+			]
+		},
+		{
+			"siteName":"bbbbb",
+			"id": 2,
+			"departments":[
+				{
+					"id":"1",
+					"name":"bbbbb department 1",
+					"users":[{
+						"name":"user 1 "
+						}]
+				},
+				{
+					"id":"2",
+					"name":"bbbbb  department 2",
+					"users":[{
+						"name":"user 2"
+					}]
+				},
+				{
+					"id":"3",
+					"name":"bbbbb  department 3",
+					"users":[{
+						"name":"user 3"
+					}]
+				}
+			]
+		}
+	]
+}
