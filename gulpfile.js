@@ -20,6 +20,4 @@ gulp.task('watch', function () {
 	gulp.watch('public/development/templates/*.jade', ['jadeToHtml']);
 });
 
-gulp.task('default',['sassToCss', 'jadeToHtml', 'watch']/*, function() {
-	console.log("tasks are running");
-}*/);
+gulp.task('default',['sassToCss', 'jadeToHtml', 'watch']);
